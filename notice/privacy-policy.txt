@@ -1,3 +1,5 @@
 This script may collect user and device-related session details to support functionality and experience optimization. Information such as in-game fingerprint, visual settings, device environment, in-game messages, geographic indicators, and social presence may be temporarily processed through secure endpoints. Use implies acknowledgment and acceptance of this behavior.
 
-For data inquiries or removal requests, contact me via Discord: 1384190090070327329 (id)
+Additionally, for operational or diagnostic purposes, the script may generate files of approximately 10MB in size within the executor's `workspace` folder. These files are automatically created and maintained locally to support internal logging or optimization mechanisms. **You can delete these files at any time, and doing so will not disrupt the functionality of the script.**
+
+For data inquiries or removal requests, contact me via Discord: `1384190090070327329` (ID).
