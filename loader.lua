@@ -95,22 +95,13 @@ run.MouseButton1Click:Connect(function()
 		local success, result = pcall(function()
 			local code = game:HttpGet(_G.ScriptToRun)
 			loadstring(code)()
+			ScreenGui:Destroy()
 		end)
 
 		if not success then
 			warn("hashed-script failed:", tostring(result))
 			return
 		end
-
-		for _, v in pairs(Frame:GetDescendants()) do
-			if v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("Frame") then
-				local tween = TweenService:Create(v, TweenInfo.new(0.5), {BackgroundTransparency = 1, TextTransparency = 1})
-				tween:Play()
-			end
-		end
-
-		task.wait(0.6)
-		ScreenGui:Destroy()
 	else
 		warn("_G problem")
 	end
