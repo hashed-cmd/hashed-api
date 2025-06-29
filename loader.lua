@@ -93,6 +93,8 @@ local TweenService = game:GetService("TweenService")
 run.MouseButton1Click:Connect(function()
 	if _G.ScriptToRun and typeof(_G.ScriptToRun) == "string" then
 		local success, result = pcall(function()
+			run.Text = "Loading..."
+			run.Interactable = false
 			local code = game:HttpGet(_G.ScriptToRun)
 			loadstring(code)()
 			ScreenGui:Destroy()
