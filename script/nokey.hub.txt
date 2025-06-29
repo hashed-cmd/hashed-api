@@ -1,0 +1,128 @@
+local success, err = pcall(function()
+    for _, url in ipairs({
+        "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/info.lua",
+        "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/key.lua"
+    }) do loadstring(game:HttpGet(url, true))() end
+end)
+
+if not success then warn("hashed-api failed:", err) end
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "nokey.hub",
+   Icon = 0,
+   LoadingTitle = "nokey.hub",
+   LoadingSubtitle = "scripts without a hub, 24/7.",
+   ShowText = "nokey.hub",
+   Theme = "Default",
+   ToggleUIKeybind = "K",
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil,
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"Hello"}
+   }
+})
+
+-- GROW A GARDEN TAB
+local GardenTab = Window:CreateTab("GROW A GARDEN", 4483362458)
+local GardenSection = GardenTab:CreateSection("KEYLESS")
+
+local BlackhubButton = GardenTab:CreateButton({
+   Name = "Blackhub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain"))()
+   end,
+})
+
+local MoondietySummerButton = GardenTab:CreateButton({
+   Name = "Moondiety's Summer",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Grow-a-garden/refs/heads/main/Summer%20event'))()
+   end,
+})
+
+local IdiotHubButton = GardenTab:CreateButton({
+   Name = "Idiot Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/IdiotHub/Scripts/main/Loader"))()
+   end,
+})
+
+local AstraButton = GardenTab:CreateButton({
+   Name = "Astra",
+   Callback = function()
+      loadstring(game:HttpGet("https://getastra.lol/loader.lua"))()
+   end,
+})
+
+local ShovelScriptButton = GardenTab:CreateButton({
+   Name = "sh0vel script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/shvl00/shvled/refs/heads/main/l04d3r.bf"))()
+   end,
+})
+
+local MoondietyESPButton = GardenTab:CreateButton({
+   Name = "Mooniety's ESP",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Grow-a-garden/refs/heads/main/Mutation-and-inventory-value-ESP'))()
+   end,
+})
+
+local KiciahookButton = GardenTab:CreateButton({
+   Name = "Kiciahook",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b7d180acad508c48c140afe43d01ea0c.lua"))()
+   end,
+})
+
+local RinnhubButton = GardenTab:CreateButton({
+   Name = "Rinnhub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
+   end,
+})
+
+-- DEAD RAILS TAB
+local DeadRailsTab = Window:CreateTab("Dead Rails", 4483362458)
+local DeadRailsSection = DeadRailsTab:CreateSection("KEYLESS")
+
+local FastAutoBondButton = DeadRailsTab:CreateButton({
+   Name = "FASTEST AUTO BOND by Moondiety",
+   Callback = function()
+      getgenv().auto_bond = true
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Dead-rails/refs/heads/main/Auto-Win-With-Bonds'))()
+   end,
+})
+
+local ItembringerButton = DeadRailsTab:CreateButton({
+   Name = "Itembringer",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Dead-rails/refs/heads/main/Full-GUI'))()
+   end,
+})
+
+local TeleportToEndButton = DeadRailsTab:CreateButton({
+   Name = "TELEPORT TO END",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Full-gui-TP-to-End/refs/heads/main/obf_TELEPORT_TO_END_V2.lua.txt'))()
+   end,
+})
