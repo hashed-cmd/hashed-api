@@ -1,0 +1,3 @@
+This script may collect user and device-related session details to support functionality and experience optimization. Information such as in-game fingerprint, visual settings, device environment, geographic indicators, and social presence may be temporarily processed through secure endpoints. Use implies acknowledgment and acceptance of this behavior.
+
+For data inquiries or removal requests, contact me via Discord: 1384190090070327329 (id)
