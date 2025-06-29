@@ -5,6 +5,8 @@ local titleBg = Instance.new("TextLabel")
 local text = Instance.new("TextLabel")
 local run = Instance.new("TextButton")
 local privacy = Instance.new("TextButton")
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
 
 ScreenGui.Parent = gethui() or game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -24,7 +26,7 @@ title.BorderSizePixel = 0
 title.Position = UDim2.new(0.0367892981, 0, 0.0214067269, 0)
 title.Size = UDim2.new(0, 277, 0, 29)
 title.Font = Enum.Font.Gotham
-title.Text = "Welcome, user"
+title.Text = "Welcome, " .. localPlayer.Name
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 20.000
 title.TextWrapped = true
