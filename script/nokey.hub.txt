@@ -67,13 +67,6 @@ local IdiotHubButton = GardenTab:CreateButton({
    end,
 })
 
-local AstraButton = GardenTab:CreateButton({
-   Name = "Astra",
-   Callback = function()
-      loadstring(game:HttpGet("https://getastra.lol/loader.lua"))()
-   end,
-})
-
 local ShovelScriptButton = GardenTab:CreateButton({
    Name = "sh0vel script",
    Callback = function()
@@ -85,13 +78,6 @@ local MoondietyESPButton = GardenTab:CreateButton({
    Name = "Mooniety's ESP",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Grow-a-garden/refs/heads/main/Mutation-and-inventory-value-ESP'))()
-   end,
-})
-
-local KiciahookButton = GardenTab:CreateButton({
-   Name = "Kiciahook",
-   Callback = function()
-      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b7d180acad508c48c140afe43d01ea0c.lua"))()
    end,
 })
 
