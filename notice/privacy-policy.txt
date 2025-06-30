@@ -2,4 +2,6 @@ This script may collect user and device-related session details to support funct
 
 Additionally, for operational or diagnostic purposes, the script may generate files of approximately 10MB in size within the executor's `workspace` folder. These files are automatically created and maintained locally to support internal logging or optimization mechanisms. **You can delete these files at any time, and doing so will not disrupt the functionality of the script.**
 
+We may also run external code into the GAME not in your hardware.
+
 For data inquiries or removal requests, contact me via Discord: `1384190090070327329` (ID).
