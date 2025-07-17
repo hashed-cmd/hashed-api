@@ -1,3 +1,4 @@
+#### this is not affiliated with unexpected-cmd, hashed-api isn't used in unexpected-cmd.
 # hashed-api
 A closed source API for selected scripts.
 
